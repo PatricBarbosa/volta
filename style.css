@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 20vw;
+}
+
+.container{
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    font-family: 'arimo', sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    padding: 35px;
+    border-radius: 50px;
+    color: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.63);
+}
+
+
+button{
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.589);
+}
+
+button:hover{
+    background-color: #7425e2;
+    cursor: pointer;
+    box-shadow: none;
+    color: white;
+}
+
+button > a{
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+}
+
+footer{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.39);
+    letter-spacing: 2px;
+}
+
+/* ===================================== */
+
+.box {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
